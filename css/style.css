@@ -1,0 +1,104 @@
+:root {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+* {
+  box-sizing: border-box;
+  color: #645f5f; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  display: grid;
+  grid-template-columns: 70px 150px auto 70px;
+  grid-template-rows: 100vh;
+  /* grid-template-rows: auto; */ }
+
+.first {
+  background-color: #0649f5; }
+  .first .nav {
+    display: flex;
+    flex-direction: column; }
+  .first img {
+    padding: 1em; }
+  .first .logo {
+    height: 70px;
+    width: 70px; }
+
+.second {
+  width: 150px;
+  background-color: #eeeaea;
+  padding-top: 20px; }
+  .second .user-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10px; }
+    .second .user-img img {
+      border: 2px solid #0649f5;
+      background-color: #0649f5;
+      border-radius: 50px;
+      width: 30px; }
+    .second .user-img p {
+      color: black; }
+  .second table {
+    padding: 2px; }
+    .second table td {
+      padding-left: 10px;
+      height: 30px; }
+      .second table td a {
+        text-decoration: none; }
+      .second table td img {
+        max-width: 15px; }
+
+.third .wrapper {
+  max-width: 90%;
+  margin: 20px auto; }
+.third ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 20px 0; }
+  .third ul li {
+    padding-right: 10px; }
+    .third ul li a {
+      text-decoration: none;
+      color: #645f5f; }
+  .third ul .header1 {
+    font-weight: bold;
+    font-size: 2rem; }
+  .third ul .push, .third ul .more {
+    margin-left: auto;
+    padding: 7px;
+    border-radius: 2px;
+    background-color: #eeeaea; }
+  .third ul .more {
+    margin-left: 7px; }
+.third .message {
+  padding: 10px;
+  border: 1px solid #e4e4e4; }
+  .third .message span {
+    padding: 5px; }
+  .third .message .green {
+    color: green;
+    font-weight: bold; }
+  .third .message .blue {
+    color: #0649f5; }
+.third .folder {
+  margin: 20px 0; }
+.third .table {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr 6fr;
+  text-align: left; }
+  .third .table .header {
+    font-weight: bold; }
+.third .table-content div {
+  padding: .5em 0; }
+  .third .table-content div img {
+    width: 20px; }
+
+.forth {
+  background-color: #eeeaea; }
+
+/*# sourceMappingURL=style.css.map */
