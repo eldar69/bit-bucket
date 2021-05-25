@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,19 +14,17 @@
 
     <div class="container">
         <div class="first">
-            <nav class="nav">
-                <div>
-                    <img src="assets/images/bitbucket.png" class="logo" alt="">
-                    <img src="assets/svg/white-search .svg" alt="">
-                    <img src="assets/svg/plus.svg" alt="">
-                </div>
+            <div class="nav">
+                <ul>
+                    <li> <img src="assets/images/bitbucket.png" class="logo" alt=""></li>
+                    <li> <img src="assets/svg/white-search .svg" alt=""></li>
+                    <li> <img src="assets/svg/plus.svg" alt=""> </li>
+                    <li class="push"> <img class="push" src="assets/svg/help-circle.svg" alt=""></li>
+                   <li> <img src="assets/svg/code.svg" class="avater" alt=""></li>
 
-                <div class="push">
-                    <img class="push" src="assets/svg/help-circle.svg" alt="">
-                    <img src="" alt="">
-                </div>
+                </ul>
 
-            </nav>
+            </div>
 
         </div>
 
@@ -93,37 +92,44 @@
             <!-- first row -->
             <div>
                 <P> Atlastian / porject Atlastian</P>
-              
+
                 <div class="nav">
                     <ul>
                         <li class="header1"> aui</li>
-                        <li class="push" > <a href="#" >Clone</a></li>
+                        <li class="push"> <a href="#">Clone</a></li>
                         <li class="more"> <a href="#"> ....</a></li>
-                    </ul>   
-                </div >     
+                    </ul>
+                </div>
             </div> <!-- end first row -->
 
 
             <div class="message">
                 <span>#1771</span>
-                <span class="green">master has passed</span>
+                <span class="green"> <i class="fa fa-check-square" class="green"></i> master has passed</span>
                 <span class="blue"> 4a3b136</span>
                 <span> core: bump master to 7.10.1-SNAPSHOT in order to overcome...</span>
-                <span >3 hours ago by chris " Diaz" Derroch</span>
+                <span>3 hours ago by chris " Diaz" Derroch</span>
 
             </div>
 
             <p>Aui- atlssian user interface library</p>
-            <div>
-                <button>master</button>
+            <div class="master-button">
+
+                <form action="">
+                    <img src="assets/svg/git-branch.svg" alt="">
+                    <select name="" id="">
+                        <img src="assets/svg/git-branch.svg" alt="">
+                        <option value="">master</option>
+                    </select>
+                </form>
             </div>
 
             <div class="folder">
-                <img src="assets/svg/folder.svg" alt=""><span>/</span>
+                <i class="fa fa-folder"></i> <span>/</span>
 
             </div>
 
-            <!-- <table>
+            <table>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -131,36 +137,54 @@
                         <th>Last commit</th>
                         <th>Message</th>
                     </tr>
-              
-              </thead>
+
+                </thead>
                 <tbody>
                     <tr>
-                        <td> <img src="assets/svg/folder.svg" alt=""> <span>build</span></td>
+                        <td><i class="fa fa-folder"></i> <span>build</span></td>
                         <td></td>
                         <td>2018-03-13</td>
                         <td>Aui-4602- first cut at outputing</td>
                     </tr>
                     <tr>
-                        <td> <img src="assets/svg/folder.svg" alt=""> <span>build</span></td>
+                        <td> <i class="fa fa-folder"></i> <span>docs</span></td>
                         <td></td>
                         <td>2018-03-13</td>
                         <td>Aui-4602- first cut at outputing</td>
                     </tr>
                     <tr>
-                        <td> <img src="assets/svg/folder.svg" alt=""> <span>build</span></td>
+                        <td> <i class="fa fa-folder"></i> <span>integration</span></td>
+                        <td></td>
+                        <td>2018-03-13</td>
+                        <td>Aui-4602- first cut at outputing</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-folder"></i> <span>playbook</span></td>
                         <td></td>
                         <td>2018-03-13</td>
                         <td>Aui-4602- first cut at outputing</td>
                     </tr>
 
                     <tr>
-                        <td> <img src="assets/svg/file-minus.svg" alt=""> <span>build</span></td>
+                        <td> <i class="	fa fa-file-code-o"></i> <span>navigation</span></td>
                         <td>75 mb</td>
                         <td>2018-03-13</td>
                         <td>Aui-4602- first cut at outputing</td>
                     </tr>
                     <tr>
-                        <td> <img src="assets/svg/file-minus.svg" alt=""> <span>build</span></td>
+                        <td> <i class="	fa fa-file-code-o"></i> <span>navigation</span></td>
+                        <td>75 mb</td>
+                        <td>2018-03-13</td>
+                        <td>Aui-4602- first cut at outputing</td>
+                    </tr>
+                    <tr>
+                        <td> <i class="	fa fa-file-code-o"></i> <span>navigation</span></td>
+                        <td>75 mb</td>
+                        <td>2018-03-13</td>
+                        <td>Aui-4602- first cut at outputing</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-file-code-o"></i> <span>pagination</span></td>
                         <td>39 mb</td>
                         <td>2018-03-13</td>
                         <td>Aui-4602- first cut at outputing</td>
@@ -168,12 +192,12 @@
 
                 </tbody>
 
-            </table> -->
+            </table>
 
 
             <!-- alternative -->
 
-             <div class="table">
+            <!-- <div class="table">
                 <div class="header">Name</div>
                 <div class="header">Size</div>
                 <div class="header">Last commit</div>
@@ -181,42 +205,39 @@
             </div>
             <hr>
             <div class="table table-content ">
-                <div><img src="assets/svg/folder.svg" alt=""> <span>build</span></div>
+                <div><i class="fa fa-folder"></i>  <span>build</span></div>
                 <div></div>
                 <div>2018-03-13</div>
                 <div>Aui-4602- first cut at outputing</div>
                 
-                <div><img src="assets/svg/folder.svg" alt=""> <span>build</span></div>
+                <div><i class="fa fa-folder"></i>  <span>build</span></div>
                 <div></div>
                 <div>2018-03-13</div>
                 <div>Aui-4602- first cut at outputing</div>
                
-                <div><img src="assets/svg/folder.svg" alt=""> <span>build</span></div>
-                <div></div>
-                <div>2018-03-13</div>
-                <div>Aui-4602- first cut at outputing</div>
-                
-                <div><img src="assets/svg/file-minus.svg" alt=""> <span>build</span></div>
-                <div>75 mb</div>
-                <div>2018-03-13</div>
-                <div>Aui-4602- first cut at outputing</div>
-                
-                <div><img src="assets/svg/file-minus.svg" alt=""> <span>build</span></div>
-                <div>30 mb</div>
+              
                 <div>2018-03-13</div>
                 <div>Aui-4602- first cut at outputing</div>
                
-                <div><img src="assets/svg/file-minus.svg" alt=""> <span>build</span></div>
+                <div><i class="fa fa-folder"></i> <span>build</span></div>
                 <div>41 mb</div>
                 <div>2018-03-13</div>
                 <div>Aui-4602- first cut at outputing</div>
-                
-            </div>  
-            
+                 
+        </div>-->
+
         </div>
     </div>
-    <div class="forth"></div>
+    <div class="forth">
+        <div class="nav">
+            <ul>
+                <li> <i class="fa fa-credit-card"></i></li>
+                <li> <i class="fa fa-exclamation-circle"></i></li>
+                <li> <i class="	fa fa-refresh"></i> </li>
 
+            </ul>
+
+        </div>
     </div>
 
 

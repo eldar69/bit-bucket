@@ -2,3 +2,12 @@ $primary-color:white;
 $secondary-color:rgb(6, 73, 245);
 $tertiary-color:rgb(238, 234, 234);
 $font-color:rgb(100, 95, 95);
+
+
+
+
+%btn{
+    padding: 7px;
+    border-radius: 2px;
+    background-color: $tertiary-color;
+}

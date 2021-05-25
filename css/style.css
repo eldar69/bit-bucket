@@ -1,56 +1,7 @@
-:root {
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif; }
-
-* {
-  box-sizing: border-box;
-  color: #645f5f; }
-
-body {
-  margin: 0;
-  padding: 0; }
-
-.container {
-  display: grid;
-  grid-template-columns: 70px 150px auto 70px;
-  grid-template-rows: 100vh;
-  /* grid-template-rows: auto; */ }
-
-.first {
-  background-color: #0649f5; }
-  .first .nav {
-    display: flex;
-    flex-direction: column; }
-  .first img {
-    padding: 1em; }
-  .first .logo {
-    height: 70px;
-    width: 70px; }
-
-.second {
-  width: 150px;
-  background-color: #eeeaea;
-  padding-top: 20px; }
-  .second .user-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 10px; }
-    .second .user-img img {
-      border: 2px solid #0649f5;
-      background-color: #0649f5;
-      border-radius: 50px;
-      width: 30px; }
-    .second .user-img p {
-      color: black; }
-  .second table {
-    padding: 2px; }
-    .second table td {
-      padding-left: 10px;
-      height: 30px; }
-      .second table td a {
-        text-decoration: none; }
-      .second table td img {
-        max-width: 15px; }
+.third ul .push, .third ul .more, .third .master-button {
+  padding: 7px;
+  border-radius: 2px;
+  background-color: #eeeaea; }
 
 .third .wrapper {
   max-width: 90%;
@@ -68,11 +19,8 @@ body {
   .third ul .header1 {
     font-weight: bold;
     font-size: 2rem; }
-  .third ul .push, .third ul .more {
-    margin-left: auto;
-    padding: 7px;
-    border-radius: 2px;
-    background-color: #eeeaea; }
+  .third ul .push {
+    margin-left: auto; }
   .third ul .more {
     margin-left: 7px; }
 .third .message {
@@ -85,20 +33,107 @@ body {
     font-weight: bold; }
   .third .message .blue {
     color: #0649f5; }
+.third .master-button {
+  width: 100px; }
+  .third .master-button select {
+    background-color: #eeeaea;
+    border: none; }
+    .third .master-button select::focus-within {
+      border: none; }
+  .third .master-button img {
+    width: 15px; }
 .third .folder {
   margin: 20px 0; }
-.third .table {
+.third table {
+  border-collapse: collapse;
+  width: 100%; }
+  .third table th {
+    border-bottom: 1px solid #cecece;
+    text-align: left; }
+  .third table td {
+    padding: 10px 0; }
+
+:root {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+* {
+  box-sizing: border-box;
+  color: #645f5f; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
   display: grid;
-  grid-template-columns: 3fr 1fr 2fr 6fr;
-  text-align: left; }
-  .third .table .header {
-    font-weight: bold; }
-.third .table-content div {
-  padding: .5em 0; }
-  .third .table-content div img {
-    width: 20px; }
+  grid-template-columns: 70px 150px auto 70px;
+  grid-template-rows: auto; }
+
+.first {
+  background-color: #0649f5; }
+  .first .nav {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column; }
+    .first .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .first .nav ul li {
+        padding: 10px 10px 10px 20px;
+        font-size: 17px; }
+        .first .nav ul li img {
+          width: 20px; }
+        .first .nav ul li .logo {
+          margin-left: -5px;
+          height: 40px;
+          width: 40px; }
+      .first .nav ul .push {
+        margin-top: 200px; }
+      .first .nav ul .avater {
+        margin-left: -5px;
+        border: 2px solid #0649f5;
+        background-color: white;
+        border-radius: 50px;
+        width: 30px; }
+
+.second {
+  width: 150px;
+  background-color: #eeeaea;
+  padding-top: 20px; }
+  .second .user-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10px; }
+    .second .user-img img {
+      border: 2px solid #0649f5;
+      background-color: #0649f5;
+      border-radius: 50px;
+      width: 30px; }
+    .second .user-img p {
+      color: black; }
+  .second table {
+    padding: 2px 0; }
+    .second table td {
+      padding-left: 10px;
+      height: 30px; }
+      .second table td a {
+        text-decoration: none; }
+      .second table td img {
+        max-width: 15px; }
 
 .forth {
   background-color: #eeeaea; }
+  .forth .nav {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column; }
+    .forth .nav ul {
+      margin: 0;
+      list-style: none; }
+      .forth .nav ul li {
+        padding: 5px 0;
+        font-size: 17px; }
 
 /*# sourceMappingURL=style.css.map */
