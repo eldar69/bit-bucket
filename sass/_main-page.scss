@@ -58,8 +58,9 @@
     select{
         background-color: $tertiary-color;
         border: none;
-        &::focus-within{
+        &:focus{
             border: none;
+            outline:0px ;
         }
       }
     img{

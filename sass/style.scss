@@ -29,17 +29,19 @@ body{
     background-color: $secondary-color;
     .nav{ 
         margin: 10px auto;
-        display: flex;
-       flex-direction: column;
+   
 
        ul{
         list-style: none;
+        display: flex;
+        flex-direction: column;
         margin: 0;
         padding: 0;
+        height: 100vh;
         
         li {
             padding: 10px 10px 10px 20px;
-            font-size: 17px;
+
             img{
                 
                 width: 20px;
@@ -51,7 +53,7 @@ body{
             }
         }
         .push{
-           margin-top: 200px;
+           margin-top: auto;
         }
         .avater{
             margin-left:-5px ;

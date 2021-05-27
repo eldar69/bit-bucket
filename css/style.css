@@ -38,8 +38,9 @@
   .third .master-button select {
     background-color: #eeeaea;
     border: none; }
-    .third .master-button select::focus-within {
-      border: none; }
+    .third .master-button select:focus {
+      border: none;
+      outline: 0px; }
   .third .master-button img {
     width: 15px; }
 .third .folder {
@@ -73,16 +74,16 @@ body {
 .first {
   background-color: #0649f5; }
   .first .nav {
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column; }
+    margin: 10px auto; }
     .first .nav ul {
       list-style: none;
+      display: flex;
+      flex-direction: column;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      height: 100vh; }
       .first .nav ul li {
-        padding: 10px 10px 10px 20px;
-        font-size: 17px; }
+        padding: 10px 10px 10px 20px; }
         .first .nav ul li img {
           width: 20px; }
         .first .nav ul li .logo {
@@ -90,7 +91,7 @@ body {
           height: 40px;
           width: 40px; }
       .first .nav ul .push {
-        margin-top: 200px; }
+        margin-top: auto; }
       .first .nav ul .avater {
         margin-left: -5px;
         border: 2px solid #0649f5;
