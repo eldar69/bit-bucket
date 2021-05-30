@@ -17,10 +17,11 @@ body{
    
 }
 .container{
-  
+    
+    max-width: 1422px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 70px 150px auto 70px;
-    //  grid-template-rows: 100vh;
+    grid-template-columns: 70px 150px auto 50px;
       grid-template-rows: auto; 
     //   height: 100vh;
 }
@@ -75,7 +76,7 @@ body{
 
 .second{
     width:150px ;
-    background-color:$tertiary-color ;
+    background-color:#f4f5f7 ;
     padding-top: 20px;
     .user-img{
         display: grid;
@@ -114,14 +115,13 @@ body{
 .forth{
     background-color: $tertiary-color;
     .nav{
-        display: flex;
-        margin-top: 10px;
-        flex-direction: column;
+        margin-top: 15px;
         ul{
             margin: 0;
+            padding: 0; 
             list-style: none;
             li {
-                padding: 5px 0;
+                padding: 5px 1px 5px 20px;
                 font-size: 17px;
             }
         }

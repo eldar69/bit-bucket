@@ -1,7 +1,7 @@
 .third ul .push, .third ul .more, .third .master-button {
   padding: 7px;
   border-radius: 2px;
-  background-color: #eeeaea; }
+  background-color: #f4f5f7; }
 
 .third .wrapper {
   max-width: 90%;
@@ -32,11 +32,11 @@
     color: green;
     font-weight: bold; }
   .third .message .blue {
-    color: #0649f5; }
+    color: #033ac7; }
 .third .master-button {
   width: 100px; }
   .third .master-button select {
-    background-color: #eeeaea;
+    background-color: #f4f5f7;
     border: none; }
     .third .master-button select:focus {
       border: none;
@@ -53,6 +53,8 @@
     text-align: left; }
   .third table td {
     padding: 10px 0; }
+  .third table .tb-padding {
+    padding-left: 7em; }
 
 :root {
   font-size: 14px;
@@ -67,12 +69,14 @@ body {
   padding: 0; }
 
 .container {
+  max-width: 1422px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 70px 150px auto 70px;
+  grid-template-columns: 70px 150px auto 50px;
   grid-template-rows: auto; }
 
 .first {
-  background-color: #0649f5; }
+  background-color: #033ac7; }
   .first .nav {
     margin: 10px auto; }
     .first .nav ul {
@@ -94,22 +98,22 @@ body {
         margin-top: auto; }
       .first .nav ul .avater {
         margin-left: -5px;
-        border: 2px solid #0649f5;
+        border: 2px solid #033ac7;
         background-color: white;
         border-radius: 50px;
         width: 30px; }
 
 .second {
   width: 150px;
-  background-color: #eeeaea;
+  background-color: #f4f5f7;
   padding-top: 20px; }
   .second .user-img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 10px; }
     .second .user-img img {
-      border: 2px solid #0649f5;
-      background-color: #0649f5;
+      border: 2px solid #033ac7;
+      background-color: #033ac7;
       border-radius: 50px;
       width: 30px; }
     .second .user-img p {
@@ -125,16 +129,15 @@ body {
         max-width: 15px; }
 
 .forth {
-  background-color: #eeeaea; }
+  background-color: #f4f5f7; }
   .forth .nav {
-    display: flex;
-    margin-top: 10px;
-    flex-direction: column; }
+    margin-top: 15px; }
     .forth .nav ul {
       margin: 0;
+      padding: 0;
       list-style: none; }
       .forth .nav ul li {
-        padding: 5px 0;
+        padding: 5px 1px 5px 20px;
         font-size: 17px; }
 
 /*# sourceMappingURL=style.css.map */
