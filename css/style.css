@@ -4,7 +4,7 @@
   background-color: #f4f5f7; }
 
 .third .wrapper {
-  max-width: 90%;
+  max-width: 95%;
   margin: 20px auto; }
 .third ul {
   list-style: none;
@@ -139,5 +139,37 @@ body {
       .forth .nav ul li {
         padding: 5px 1px 5px 20px;
         font-size: 17px; }
+
+/* Extra large screens, */
+@media (max-width: 1522px) {
+  .container {
+    /* max-width: 1170px; */
+    max-width: 1422px;
+    margin: 0 auto; } }
+/* laptop */
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto; } }
+/* ipad */
+@media (max-width: 768px) {
+  .container {
+    max-width: 7500px;
+    margin: 0 auto;
+    grid-template-columns: 11fr 1fr; }
+
+  .first {
+    display: none; }
+
+  .second {
+    display: none; } }
+@media (max-width: 700px) {
+  .container {
+    max-width: 650px;
+    margin: 0 auto; } }
+@media (max-width: 512px) {
+  .container {
+    max-width: 495px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
